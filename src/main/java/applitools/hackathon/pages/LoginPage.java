@@ -5,8 +5,6 @@ package applitools.hackathon.pages;
  * Email: roman.iovlev.jdi@gmail.com; Skype: roman.iovlev
  */
 
-import com.applitools.eyes.selenium.fluent.SeleniumCheckSettings;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

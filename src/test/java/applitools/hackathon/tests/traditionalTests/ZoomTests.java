@@ -23,6 +23,7 @@ public class ZoomTests extends TestsInitEyes {
     public void loginFailedValidation(User user, String message) {
         login(user);
         // Makes wrong image while have 150% zoom in Windows
+        // Even if correct (100% zoom) by some reasons will match all 3 checks to one baseline, expected 3 separate baselines for each message/tag
         eyes().check("Alert: " + message, region(By.cssSelector(".alert-warning")));
     }
 

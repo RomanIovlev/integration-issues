@@ -7,14 +7,10 @@ package applitools.hackathon.pages;
 
 import com.applitools.eyes.selenium.fluent.SeleniumCheckSettings;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import static applitools.hackathon.pages.ApplitoolsUtils.eyes;
 import static applitools.hackathon.pages.DriverUtils.DRIVER;
 import static com.applitools.eyes.selenium.fluent.Target.region;
-import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class LoginPageNew {
     private static SeleniumCheckSettings get(By locator) {

@@ -16,19 +16,19 @@ import static applitools.hackathon.pages.LoginPage.loginPage;
 public class LoginCheckTests extends TestsInitEyes {
     //region check elements by locator
     @Test
-    public void loginPageNewCheckNew() {
+    public void loginPageNewCheck() {
         // PASS
         DRIVER.navigate().to(LoginPage.URL);
         LoginPageNew.checkNew();
     }
     @Test
-    public void loginPageNewCheckRegionNew() {
+    public void loginPageNewCheckRegion() {
         // PASS
         DRIVER.navigate().to(LoginPage.URL);
         LoginPageNew.checkRegionNew();
     }
     @Test
-    public void loginPageNewCheckElementNew() {
+    public void loginPageNewCheckElement() {
         // Same as LoginPageNewCheckNew but FAIL
         DRIVER.navigate().to(LoginPage.URL);
         LoginPageNew.checkElementNew();
@@ -37,19 +37,19 @@ public class LoginCheckTests extends TestsInitEyes {
 
     //region check elements in Page Objects
     @Test
-    public void loginPageCheckNew() {
+    public void loginPageCheck() {
         // Same as LoginPageNewCheckRegionNew but FAIL
         DRIVER.navigate().to(LoginPage.URL);
         loginPage.check();
     }
     @Test
-    public void loginPageCheckRegionNew() {
+    public void loginPageCheckRegion() {
         // Same as LoginPageNewCheckNew but FAIL
         DRIVER.navigate().to(LoginPage.URL);
         loginPage.checkRegion();
     }
     @Test
-    public void loginPageCheckElementNew() {
+    public void loginPageCheckElement() {
         // FAIL
         DRIVER.navigate().to(LoginPage.URL);
         loginPage.checkElement();
